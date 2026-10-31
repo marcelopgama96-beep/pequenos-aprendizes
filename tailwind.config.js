@@ -1,0 +1,1 @@
+module.exports = {content: ['./index.html'], theme: {extend: {colors: {primary:'#4BFFC9','primary-dark':'#2be0ab',secondary:'#FF5A82','secondary-dark':'#e04369',surface:'#121214',card:'#1a1a1e',subtle:'#27272a'},fontFamily:{sans:['Outfit','sans-serif']}}}};
