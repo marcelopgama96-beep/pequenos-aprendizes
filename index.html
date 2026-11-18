@@ -46,8 +46,49 @@
       transform: translateY(-6px) rotateX(2deg) rotateY(-2deg);
       box-shadow: 0 20px 40px -15px rgba(75, 255, 201, 0.2);
     }
-    .sample-download:hover { background-color: rgba(75, 255, 201, 0.1); }
-    .sample-download:focus-visible { outline: 2px solid #4BFFC9; outline-offset: 4px; }
+    .sample-card {
+      position: relative;
+      padding: 28px;
+      border: 2px solid #4BFFC9;
+      border-radius: 24px;
+      background: linear-gradient(135deg, #ddfff3, #b8f5e5);
+      color: #102b25;
+      box-shadow: 0 12px 40px rgba(75, 255, 201, 0.18);
+    }
+    .sample-badge {
+      display: inline-flex;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: #102b25;
+      color: #4BFFC9;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .sample-card h2 { margin: 16px 0 10px; font-size: clamp(26px, 4vw, 34px); line-height: 1.15; font-weight: 800; }
+    .sample-card p { color: #30564b; font-size: 16px; line-height: 1.6; }
+    .sample-download {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      width: 100%;
+      margin-top: 20px;
+      padding: 17px 20px;
+      border-radius: 14px;
+      background: #102b25;
+      color: #fff;
+      font-size: 17px;
+      font-weight: 800;
+      text-align: center;
+      box-shadow: 0 6px 16px rgba(16, 43, 37, 0.18);
+      transition: background-color .2s, transform .2s;
+    }
+    .sample-download:hover { background-color: #204c40; transform: translateY(-2px); }
+    .sample-download:focus-visible { outline: 3px solid #102b25; outline-offset: 4px; }
+    .sample-card .sample-note { margin-top: 12px; font-size: 13px; text-align: center; }
+    @media (max-width: 480px) { .sample-card { padding: 22px 18px; } .sample-download { font-size: 16px; } }
   </style>
 
 </head>
@@ -110,16 +151,16 @@
               </div>
             </div>
 
-            <div class="rounded-2xl bg-zinc-900/80 border border-white/10 p-6 space-y-4">
-              <div>
-                <h2 class="text-lg font-bold text-white mb-2">Experimente antes de comprar</h2>
-                <p class="text-zinc-400 text-sm leading-relaxed">Baixe uma amostra grátis com 10 atividades em PDF para conhecer o material. Download direto, sem cadastro.</p>
-              </div>
-              <a href="assets/Amostra_10_Atividades_Pequenos_Aprendizes.pdf" download="Amostra_10_Atividades_Pequenos_Aprendizes.pdf" class="sample-download inline-flex items-center gap-3 text-primary font-bold px-5 py-2.5 rounded-xl border border-primary/20 transition-all">
+            <section class="sample-card" aria-labelledby="sample-title">
+              <span class="sample-badge">Amostra 100% grátis</span>
+              <h2 id="sample-title">10 atividades para<br>baixar e experimentar!</h2>
+              <p>Conheça o material antes de comprar. Receba uma seleção de atividades em PDF, prontas para imprimir e usar com os pequenos.</p>
+              <a href="assets/Amostra_10_Atividades_Pequenos_Aprendizes.pdf" download="Amostra_10_Atividades_Pequenos_Aprendizes.pdf" class="sample-download">
                 <svg class="w-5 h-5" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v12m0 0 4-4m-4 4-4-4M5 16v4h14v-4"></path></svg>
-                <span>Baixar amostra grátis (PDF)</span>
+                <span>Baixar minha amostra grátis</span>
               </a>
-            </div>
+              <p class="sample-note">PDF gratuito · Download imediato · Sem cadastro</p>
+            </section>
 
             <div class="grid grid-cols-3 gap-4 pt-6 border-t border-white/10 text-zinc-400 text-sm">
               <div>
