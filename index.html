@@ -89,17 +89,29 @@
     .sample-download:focus-visible { outline: 3px solid #102b25; outline-offset: 4px; }
     .sample-card .sample-note { margin-top: 12px; font-size: 13px; text-align: center; }
     @media (max-width: 480px) { .sample-card { padding: 22px 18px; } .sample-download { font-size: 16px; } }
-    .purchase-card {
-      border-color: #FF5A82;
-      background: linear-gradient(135deg, #ffe5ed, #ffc6d6);
-      color: #461426;
-      box-shadow: 0 12px 40px rgba(255, 90, 130, 0.2);
+    .hero-purchase {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      width: 100%;
+      min-height: 96px;
+      padding: 26px 24px;
+      border: 2px solid #75ffda;
+      border-radius: 20px;
+      background: #2be0ab;
+      color: #071e18;
+      font-size: clamp(20px, 3vw, 26px);
+      font-weight: 800;
+      line-height: 1.25;
+      text-align: center;
+      box-shadow: 0 12px 32px rgba(43, 224, 171, 0.3);
+      transition: background-color .2s, transform .2s;
     }
-    .purchase-card .sample-badge { background: #461426; color: #ffd9e5; }
-    .purchase-card p { color: #70354a; }
-    .purchase-button { background: #b6204c; box-shadow: 0 6px 18px rgba(182, 32, 76, 0.25); }
-    .purchase-button:hover { background: #96183d; }
-    .purchase-button:focus-visible { outline-color: #461426; }
+    .hero-purchase svg { width: 26px; height: 26px; flex-shrink: 0; }
+    .hero-purchase:hover { background: #4BFFC9; transform: translateY(-2px); }
+    .hero-purchase:focus-visible { outline: 3px solid #fff; outline-offset: 4px; }
+    @media (max-width: 480px) { .hero-purchase { padding: 24px 18px; } }
   </style>
 
 </head>
@@ -144,16 +156,10 @@
               Mais praticidade para preparar suas aulas e tornar a aprendizagem divertida! O kit definitivo pronto para imprimir e utilizar com crianças de 4 a 5 anos.
             </p>
 
-            <section class="sample-card purchase-card" aria-labelledby="purchase-title">
-              <span class="sample-badge">Kit completo · 1.000 atividades</span>
-              <h2 id="purchase-title">Tudo pronto para suas<br>próximas aulas!</h2>
-              <p>Adquira o kit completo com 1.000 atividades em PDF para imprimir e tornar a aprendizagem mais divertida.</p>
-              <a href="https://pay.hotmart.com/H108180859P?off=rkvpy6ps&amp;hotfeature=51" class="sample-download purchase-button">
-                <span>Quero adquirir o kit completo</span>
-                <svg class="w-5 h-5" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path></svg>
-              </a>
-              <p class="sample-note">Compra pela Hotmart · Produto 100% digital</p>
-            </section>
+            <a href="https://pay.hotmart.com/H108180859P?off=rkvpy6ps&amp;hotfeature=51" class="hero-purchase">
+              <span>Quero Garantir o Kit Agora</span>
+              <svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path></svg>
+            </a>
 
             <section class="sample-card" aria-labelledby="sample-title">
               <span class="sample-badge">Amostra 100% grátis</span>
