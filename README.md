@@ -24,3 +24,7 @@ npx --yes --package=tailwindcss@3.4.17 tailwindcss -i styles.input.css -o assets
 Foram retirados apenas o redirecionamento HTTPS imposto pela hospedagem original e os scripts de analytics/launcher específicos da Hotmart Host. Os links de pagamento e seus parâmetros foram preservados.
 
 Origem: https://marcelopgama96.hotmart.host/pequenos-aprendizes-kit-com-1-000-atividades-para-educacao-infantil-em-pdf-896266b9-46ad-42a1-8ea9-28873f2d08eb
+
+## Amostra grátis
+
+O botão "Baixar amostra grátis (PDF)" na apresentação inicial oferece download direto de `assets/Amostra_10_Atividades_Pequenos_Aprendizes.pdf`, sem cadastro. O PDF é servido pela mesma hospedagem da página.

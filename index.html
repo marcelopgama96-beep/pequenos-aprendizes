@@ -46,6 +46,8 @@
       transform: translateY(-6px) rotateX(2deg) rotateY(-2deg);
       box-shadow: 0 20px 40px -15px rgba(75, 255, 201, 0.2);
     }
+    .sample-download:hover { background-color: rgba(75, 255, 201, 0.1); }
+    .sample-download:focus-visible { outline: 2px solid #4BFFC9; outline-offset: 4px; }
   </style>
 
 </head>
@@ -106,6 +108,17 @@
                   <p class="text-zinc-400">de professores e famílias</p>
                 </div>
               </div>
+            </div>
+
+            <div class="rounded-2xl bg-zinc-900/80 border border-white/10 p-6 space-y-4">
+              <div>
+                <h2 class="text-lg font-bold text-white mb-2">Experimente antes de comprar</h2>
+                <p class="text-zinc-400 text-sm leading-relaxed">Baixe uma amostra grátis com 10 atividades em PDF para conhecer o material. Download direto, sem cadastro.</p>
+              </div>
+              <a href="assets/Amostra_10_Atividades_Pequenos_Aprendizes.pdf" download="Amostra_10_Atividades_Pequenos_Aprendizes.pdf" class="sample-download inline-flex items-center gap-3 text-primary font-bold px-5 py-2.5 rounded-xl border border-primary/20 transition-all">
+                <svg class="w-5 h-5" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v12m0 0 4-4m-4 4-4-4M5 16v4h14v-4"></path></svg>
+                <span>Baixar amostra grátis (PDF)</span>
+              </a>
             </div>
 
             <div class="grid grid-cols-3 gap-4 pt-6 border-t border-white/10 text-zinc-400 text-sm">
